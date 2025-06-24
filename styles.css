@@ -1,0 +1,104 @@
+/* Based on:  */
+/* https://www.joshwcomeau.com/css/custom-css-reset/ */
+
+/* 1. Use a more-intuitive box-sizing model */
+/* use :root? */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+/* 2. Remove default margin */
+* {
+  margin: 0;
+  /* me */
+  padding: 0;
+  border: 0;
+  /* font-family: sans-serif; */
+}
+body {
+  /* 3. Add accessible line-height */
+  line-height: 1.7;
+  /* 4. Improve text rendering */
+  -webkit-font-smoothing: antialiased;
+  /* me - inherit font from html */
+  font-size: inherit;
+  font-family: inherit;
+  display: block;
+}
+/* 5. Improve media defaults */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+/* 6. Inherit fonts for form controls */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+/* 7. Avoid text overflows */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+/* 8. Improve line wrapping */
+p {
+  text-wrap: pretty;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+}
+/* 9. Create a root stacking context */
+#root,
+#__next {
+  isolation: isolate;
+}
+
+.page {
+  font-family: sans-serif, system-ui;
+  background-color: #0a0518;
+  width: 100vw;
+  height: 100vh;
+  color: azure;
+}
+
+.page h1 {
+  padding: 10px;
+  width: 100vw;
+  text-align: center;
+  font-size: 50px;
+}
+.links-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+.links-column {
+  padding: 10px 40px;
+  width: 22vw;
+  display: block;
+}
+.links-column h2 {
+  text-decoration: underline;
+}
+.links-container a {
+  text-decoration: none;
+  color: azure;
+  display: block;
+  font-size: 20px;
+}
